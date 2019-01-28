@@ -66,7 +66,7 @@ function addProduct() {
 		    div.remove();
 		    // console.log(i);
 
-			document.write(ctxArr[i]);
+			// document.write(ctxArr[i]);
 
 				// console.log(close);
 			// update(i);

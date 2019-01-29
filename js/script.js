@@ -30,8 +30,13 @@ function addProduct() {
 		}
 		else {
 			lstNode = document.getElementById("list");
+			lstNode.setAttribute("class", "stt");
+			// document.getElementsByClassName("stt").style.counterReset = "my-awesome-counter";
 			trNode = document.createElement("TR");
 			tdNode = document.createElement("TD");
+			tdNode.setAttribute("class", "sttr");
+			// document.getElementsByClassName("sttr").style.counterIncrement = "my-awesome-counter";
+			// document.getElementsByClassName("sttr:before").style.content = ""
 			td1Node = document.createElement("TD");
 			td2Node = document.createElement("TD");
 			td2Node.setAttribute("class","close");
@@ -43,7 +48,8 @@ function addProduct() {
 			butNode.append(nameButNode);
 
 			COUNT = COUNT + 1;
-			numNode = document.createTextNode(index);
+			numNode = document.createTextNode("");
+
 			txtNode = document.createTextNode(ctxArr[index]);
 
 			document.getElementById("name-product").value = " ";

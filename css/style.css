@@ -3,6 +3,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 49%;
+  counter-reset: my-awesome-counter;
 }
 
 td, th {
@@ -14,6 +15,19 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.sttr {
+  counter-increment: my-awesome-counter;
+  text-align: center;
+  /*border: 1px solid black;*/
+  
+}
+
+.sttr:before {
+  content: counter(my-awesome-counter) ". ";
+}
+
+/*table*/
 
 .content {
 	margin: 12px auto;
